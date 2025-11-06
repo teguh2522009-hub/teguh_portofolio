@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Teguh Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Teguh Portfolio</div>
+    <div class="nav-links">
+      <a href="home.html" class="nav-link">Home</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+      <a href="skills.html" class="nav-link active">Skills</a>
+      <a href="certs.html" class="nav-link">Certificates</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills-section">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+      <div class="skill-card" onclick="toggleSkill('mikrotik')">
+        <h3>MikroTik</h3>
+        <div class="skill-list" id="mikrotik">
+          <ul>
+            <li>Router Configuration</li>
+            <li>VLAN Management</li>
+            <li>Firewall & NAT Rules</li>
+            <li>Hotspot Setup</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card" onclick="toggleSkill('debian')">
+        <h3>Debian</h3>
+        <div class="skill-list" id="debian">
+          <ul>
+            <li>DNS Server</li>
+            <li>DHCP Server</li>
+            <li>Web Server (Apache/Nginx)</li>
+            <li>Samba & FTP Configuration</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card" onclick="toggleSkill('ccna')">
+        <h3>CCNA</h3>
+        <div class="skill-list" id="ccna">
+          <ul>
+            <li>Subnetting</li>
+            <li>Routing & Switching</li>
+            <li>VLAN Trunking</li>
+            <li>Static & Dynamic Routing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
